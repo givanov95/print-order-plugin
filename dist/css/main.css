@@ -1,0 +1,118 @@
+@media all {
+  /* variables  */
+  :root {
+    --main-color: #dd291a;
+  }
+
+  /* /. variables */
+
+  /* Reset  */
+  body {
+    font-size: 12px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+  /* ./ */
+
+  /* Tempalte helpers */
+  .wrapper {
+    padding: 2mm;
+    max-width: 100%;
+  }
+
+  .row {
+    display: flex;
+    margin: 10px 0;
+  }
+
+  .col {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+  }
+
+
+  /* shadows*/
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+
+  .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+
+  /* .shadows*/
+
+  /* ./ Template helpers*/
+
+  /* Main template */
+  .page-container {
+    max-width: 210mm;
+    background-color: white;
+    margin: 1em auto;
+  }
+
+  .header-website {
+    color: var(--main-color);
+  }
+
+  .invoice-reciever {
+    display: flex;
+    justify-content: center;
+  }
+
+  .products-table {
+    border: none;
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+  }
+
+  .products-table th,
+  tr,
+  td {
+    border: 2px solid black;
+    padding: 5px 8px;
+  }
+
+  .total-invoice-info {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .total-invoice-price-container {
+    -webkit-print-color-adjust: exact !important;
+    background-color: #c1c1c1;
+  }
+
+  .total-invoice-price-container {
+    font-size: 30px;
+    padding: 3px 20px;
+  }
+
+  .total-invoice-price-number {
+    color: var(--main-color);
+  }
+
+  /* ./ Main template  */
+
+  /* Helpers */
+  .text-center {
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+}
