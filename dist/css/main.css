@@ -91,6 +91,10 @@
     font-weight: bold;
   }
   
+  .total-invoice-info {
+    padding: 3px 20px;
+  }
+  
   .total-invoice-price-container {
     -webkit-print-color-adjust: exact !important;
     background-color: #c1c1c1;

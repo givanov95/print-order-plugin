@@ -33,12 +33,6 @@ if (is_null($order_id)) {
     exit;
 }
 
-if (!current_user_can('edit_post', $order_id)) {
-    echo <<<HTML
-    <div class="error"> <p>Нямате права да принтирате</p></div>
-HTML;
-    exit;
-}
 
 use WPML\PB\Gutenberg\StringsInBlock\HTML;
 
@@ -241,15 +235,15 @@ HTML;
         <div class="container">
             <div class="row">
                 <div class="col">SUMME</div>
-                <div class="col">{$total_sum_no_vat}€</div>
+                <div class="col text-right">{$total_sum_no_vat}€</div>
             </div>
             <div class="row">
                 <div class="col">Mehrwertsteuer 7% auf {$fn(formatPrice($total_no_vat_small_percent))}€</div>
-                <div class="col">{$only_vat_small_vat}€</div>
+                <div class="col text-right">{$only_vat_small_vat}€</div>
             </div>
             <div class="row">
                 <div class="col">Mehrwertsteuer 19% auf {$fn(formatPrice($total_no_vat_big_percent))}€</div>
-                <div class="col">{$only_vat_big_vat}€</div>
+                <div class="col text-right">{$only_vat_big_vat}€</div>
             </div>
         </div>  
 </section>
