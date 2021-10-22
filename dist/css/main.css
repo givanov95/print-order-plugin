@@ -1,3 +1,20 @@
+/* Hide header and footer for Firefox - URL etc. */
+@page {
+  size: auto;
+  margin: 0;
+}
+
+@print {
+  @page :footer {
+    display: none
+  }
+
+  @page :header {
+    display: none
+  }
+}
+
+
 @media all {
   /* variables  */
   :root {
